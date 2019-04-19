@@ -3,7 +3,7 @@
 ## 运行
 ```bash
 git clone git@github.com:fe-architecture-and-engineering/isomorphic-react.git
-cd spa-router-hash
+cd isomorphic-react
 npm install&&npm start
 ```
 
