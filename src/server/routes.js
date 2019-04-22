@@ -10,7 +10,7 @@ import App from 'isomorphic/App.jsx';
 import reducers from 'isomorphic/store/reducer';
 import routes from 'isomorphic/routes';
 
-const router = express.Router()
+const router = express.Router();
 
 router.get('/*', async (req, res) => {
   const store = createStore(reducers, {},applyMiddleware(thunk));

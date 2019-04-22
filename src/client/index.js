@@ -6,18 +6,11 @@ import { Provider } from 'react-redux';
 import store from 'isomorphic/store';
 import App from 'isomorphic/App';
 
-// hydrate((
-//     <Provider store={store}>
-//         <Router>
-//             <App />
-//         </Router>
-//     </Provider>
-// ), document.getElementById('app'));
-ReactDOM.render(
+hydrate(
     <Provider store={store}>
-             <Router>
-                 <App />
-             </Router>
-         </Provider>,
+        <Router>
+            <App />
+        </Router>
+    </Provider>,
     document.getElementById('app')
 );
